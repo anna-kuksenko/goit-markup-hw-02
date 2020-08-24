@@ -29,6 +29,9 @@ body {
   list-style: none;
 }
 
+.link {
+  text-decoration: none;
+}
 /* logo */
 .logo {
   color: var(--title-text-color);
@@ -50,7 +53,8 @@ body {
 
 /* site-nav */
 
-.site-nav .link {
+.site-nav .link,
+.auth-nav .link {
   color: var(--title-text-color);
 
   font-weight: 500;
@@ -66,16 +70,6 @@ body {
 
 .site-nav .link.current {
   color: var(--accent-color);
-}
-
-/* auth-nav */
-
-.auth-nav .link {
-  color: var(--title-text-color);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
 }
 
 .auth-nav .link:hover,
@@ -118,7 +112,7 @@ body {
   line-height: 1.14;
 }
 
-.section-title-paragraph {
+.section-paragraph {
   color: var(--primary-text-color);
   font-weight: 400;
   font-size: 14px;
